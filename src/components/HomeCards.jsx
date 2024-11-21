@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-
+import { Link } from "react-router-dom";
 const HomeCards = () => {
   return (
     <section className="py-4">
@@ -11,24 +11,24 @@ const HomeCards = () => {
             <p className="mt-2 mb-4">
               Browse our job positions and start your career today
             </p>
-            <a
-              href="/jobs.html"
+            <Link
+              to="/job"
               className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
             >
               Browse jobs
-            </a>
+            </Link>
           </Card>
           <Card bg="bg-blue-100">
             <h2 className="text-2xl font-bold">For employers</h2>
             <p className="mt-2 mb-4">
               List your offer to find the perfect developer for the role
             </p>
-            <a
-              href="/add-job.html"
+            <Link
+              to="/add-job"
               className="inline-block bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-800"
             >
               Add job
-            </a>
+            </Link>
           </Card>
         </div>
       </div>
