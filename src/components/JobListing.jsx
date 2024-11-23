@@ -11,7 +11,7 @@ const JobListing = ({ job }) => {
     description = description.substring(0, 90) + "...";
   }
   return (
-    <div class="bg-white rounded-xl shadow-md relative">
+    <div className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">
         <div className="mb-6">
           <div className="text-gray-600 my-2">{job.type}</div>
